@@ -1,0 +1,24 @@
+[2022-12-12 05:28:25,179] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.world manual__2022-12-12T05:27:45.873390+00:00 [queued]>
+[2022-12-12 05:28:25,245] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.world manual__2022-12-12T05:27:45.873390+00:00 [queued]>
+[2022-12-12 05:28:25,247] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-12 05:28:25,249] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-12 05:28:25,251] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-12 05:28:25,581] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): world> on 2022-12-12 05:27:45.873390+00:00
+[2022-12-12 05:28:25,710] {standard_task_runner.py:52} INFO - Started process 7907 to run task
+[2022-12-12 05:28:25,797] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'world', 'manual__2022-12-12T05:27:45.873390+00:00', '--job-id', '1690', '--raw', '--subdir', 'DAGS_FOLDER/first-dag.py', '--cfg-path', '/tmp/tmpmt6b0e0_', '--error-file', '/tmp/tmplzwlyfgx']
+[2022-12-12 05:28:25,894] {standard_task_runner.py:80} INFO - Job 1690: Subtask world
+[2022-12-12 05:28:35,449] {task_command.py:369} INFO - Running <TaskInstance: first_dag.world manual__2022-12-12T05:27:45.873390+00:00 [running]> on host 7e39590a7807
+[2022-12-12 05:28:36,580] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=world
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-12T05:27:45.873390+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-12T05:27:45.873390+00:00
+[2022-12-12 05:28:36,597] {logging_mixin.py:115} INFO - Airflow
+[2022-12-12 05:28:36,602] {python.py:173} INFO - Done. Returned value was: None
+[2022-12-12 05:28:36,815] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=first_dag, task_id=world, execution_date=20221212T052745, start_date=20221212T052825, end_date=20221212T052836
+[2022-12-12 05:28:37,167] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-12-12 05:28:37,631] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

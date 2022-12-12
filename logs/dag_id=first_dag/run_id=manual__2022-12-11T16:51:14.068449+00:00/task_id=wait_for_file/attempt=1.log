@@ -1,0 +1,64 @@
+[2022-12-11 16:51:20,740] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.wait_for_file manual__2022-12-11T16:51:14.068449+00:00 [queued]>
+[2022-12-11 16:51:20,755] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.wait_for_file manual__2022-12-11T16:51:14.068449+00:00 [queued]>
+[2022-12-11 16:51:20,756] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 16:51:20,757] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-11 16:51:20,759] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 16:51:20,777] {taskinstance.py:1377} INFO - Executing <Task(PythonSensor): wait_for_file> on 2022-12-11 16:51:14.068449+00:00
+[2022-12-11 16:51:20,786] {standard_task_runner.py:52} INFO - Started process 3451 to run task
+[2022-12-11 16:51:20,789] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'wait_for_file', 'manual__2022-12-11T16:51:14.068449+00:00', '--job-id', '1033', '--raw', '--subdir', 'DAGS_FOLDER/first-dag.py', '--cfg-path', '/tmp/tmpifn_7aq1', '--error-file', '/tmp/tmp1bwaq5il']
+[2022-12-11 16:51:20,792] {standard_task_runner.py:80} INFO - Job 1033: Subtask wait_for_file
+[2022-12-11 16:51:20,875] {task_command.py:369} INFO - Running <TaskInstance: first_dag.wait_for_file manual__2022-12-11T16:51:14.068449+00:00 [running]> on host 7e39590a7807
+[2022-12-11 16:51:20,982] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=wait_for_file
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-11T16:51:14.068449+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-11T16:51:14.068449+00:00
+[2022-12-11 16:51:20,986] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec9adcb0>
+[2022-12-11 16:51:21,001] {logging_mixin.py:115} INFO - _wait_for_file /tmp/file.txt
+[2022-12-11 16:52:20,996] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec9adcb0>
+[2022-12-11 16:52:21,028] {logging_mixin.py:115} INFO - _wait_for_file /tmp/file.txt
+[2022-12-11 16:53:21,020] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec9adcb0>
+[2022-12-11 16:53:21,042] {logging_mixin.py:115} INFO - _wait_for_file /tmp/file.txt
+[2022-12-11 16:59:02,567] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec9adcb0>
+[2022-12-11 16:59:02,605] {logging_mixin.py:115} INFO - _wait_for_file /tmp/file.txt
+[2022-12-11 17:00:02,618] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec9adcb0>
+[2022-12-11 17:00:02,661] {logging_mixin.py:115} INFO - _wait_for_file /tmp/file.txt
+[2022-12-11 17:01:02,639] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec9adcb0>
+[2022-12-11 17:01:02,660] {logging_mixin.py:115} INFO - _wait_for_file /tmp/file.txt
+[2022-12-11 17:02:02,641] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec9adcb0>
+[2022-12-11 17:02:02,687] {logging_mixin.py:115} INFO - _wait_for_file /tmp/file.txt
+[2022-12-11 17:03:02,686] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec9adcb0>
+[2022-12-11 17:03:02,713] {logging_mixin.py:115} INFO - _wait_for_file /tmp/file.txt
+[2022-12-11 17:04:02,689] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec9adcb0>
+[2022-12-11 17:04:02,735] {logging_mixin.py:115} INFO - _wait_for_file /tmp/file.txt
+[2022-12-11 17:05:02,717] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec9adcb0>
+[2022-12-11 17:05:02,904] {logging_mixin.py:115} INFO - _wait_for_file /tmp/file.txt
+[2022-12-11 17:06:02,935] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec9adcb0>
+[2022-12-11 17:06:02,978] {logging_mixin.py:115} INFO - _wait_for_file /tmp/file.txt
+[2022-12-11 17:07:02,966] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec9adcb0>
+[2022-12-11 17:07:03,076] {logging_mixin.py:115} INFO - _wait_for_file /tmp/file.txt
+[2022-12-11 17:08:03,029] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec9adcb0>
+[2022-12-11 17:08:03,066] {logging_mixin.py:115} INFO - _wait_for_file /tmp/file.txt
+[2022-12-11 17:08:25,706] {local_task_job.py:221} WARNING - State of this instance has been externally set to None. Terminating instance.
+[2022-12-11 17:08:25,831] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 3451. PIDs of all processes in the group: [3451]
+[2022-12-11 17:08:25,851] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 3451
+[2022-12-11 17:08:25,876] {taskinstance.py:1541} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-12-11 17:08:26,282] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 299, in execute
+    time.sleep(self._get_next_poke_interval(started_at, run_duration, try_number))
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1543, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2022-12-11 17:08:26,413] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=first_dag, task_id=wait_for_file, execution_date=20221211T165114, start_date=20221211T165120, end_date=20221211T170826
+[2022-12-11 17:08:26,750] {standard_task_runner.py:97} ERROR - Failed to execute job 1033 for task wait_for_file ((psycopg2.errors.ForeignKeyViolation) insert or update on table "task_fail" violates foreign key constraint "task_fail_ti_fkey"
+DETAIL:  Key (dag_id, task_id, run_id, map_index)=(first_dag, wait_for_file, manual__2022-12-11T16:51:14.068449+00:00, -1) is not present in table "task_instance".
+
+[SQL: INSERT INTO task_fail (task_id, dag_id, run_id, map_index, start_date, end_date, duration) VALUES (%(task_id)s, %(dag_id)s, %(run_id)s, %(map_index)s, %(start_date)s, %(end_date)s, %(duration)s) RETURNING task_fail.id]
+[parameters: {'task_id': 'wait_for_file', 'dag_id': 'first_dag', 'run_id': 'manual__2022-12-11T16:51:14.068449+00:00', 'map_index': -1, 'start_date': datetime.datetime(2022, 12, 11, 16, 51, 20, 742142, tzinfo=Timezone('UTC')), 'end_date': datetime.datetime(2022, 12, 11, 17, 8, 26, 364022, tzinfo=Timezone('UTC')), 'duration': 1025}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj); 3451)
+[2022-12-11 17:08:26,830] {process_utils.py:75} INFO - Process psutil.Process(pid=3451, status='terminated', exitcode=1, started='16:51:19') (3451) terminated with exit code 1

@@ -1,0 +1,31 @@
+[2022-12-11 20:39:00,517] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.insert_data manual__2022-12-11T20:37:45.779524+00:00 [queued]>
+[2022-12-11 20:39:00,690] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.insert_data manual__2022-12-11T20:37:45.779524+00:00 [queued]>
+[2022-12-11 20:39:00,692] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 20:39:00,695] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-11 20:39:00,698] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 20:39:00,870] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): insert_data> on 2022-12-11 20:37:45.779524+00:00
+[2022-12-11 20:39:00,970] {standard_task_runner.py:52} INFO - Started process 6228 to run task
+[2022-12-11 20:39:01,091] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'insert_data', 'manual__2022-12-11T20:37:45.779524+00:00', '--job-id', '1510', '--raw', '--subdir', 'DAGS_FOLDER/first-dag.py', '--cfg-path', '/tmp/tmp14a70011', '--error-file', '/tmp/tmphyp8ckmm']
+[2022-12-11 20:39:01,119] {standard_task_runner.py:80} INFO - Job 1510: Subtask insert_data
+[2022-12-11 20:39:03,407] {task_command.py:369} INFO - Running <TaskInstance: first_dag.insert_data manual__2022-12-11T20:37:45.779524+00:00 [running]> on host 7e39590a7807
+[2022-12-11 20:39:05,810] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=insert_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-11T20:37:45.779524+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-11T20:37:45.779524+00:00
+[2022-12-11 20:39:05,920] {base.py:68} INFO - Using connection ID 'db' for task execution.
+[2022-12-11 20:39:06,005] {logging_mixin.py:115} INFO - insert into task(value_1, value_2) VALUES (7,6
+);insert into task(value_1, value_2) VALUES (7,7
+);insert into task(value_1, value_2) VALUES (6,9
+);insert into task(value_1, value_2) VALUES (5,3
+);insert into task(value_1, value_2) VALUES (9,9
+);
+[2022-12-11 20:39:06,014] {logging_mixin.py:115} INFO - PostgreSQL connection is closed
+[2022-12-11 20:39:06,016] {python.py:173} INFO - Done. Returned value was: None
+[2022-12-11 20:39:06,130] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=first_dag, task_id=insert_data, execution_date=20221211T203745, start_date=20221211T203900, end_date=20221211T203906
+[2022-12-11 20:39:06,386] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-12-11 20:39:06,496] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,23 @@
+[2022-12-11 17:08:50,558] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.write_diff_task manual__2022-12-11T17:08:37.071274+00:00 [queued]>
+[2022-12-11 17:08:50,613] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.write_diff_task manual__2022-12-11T17:08:37.071274+00:00 [queued]>
+[2022-12-11 17:08:50,616] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 17:08:50,619] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-11 17:08:50,621] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 17:08:50,667] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): write_diff_task> on 2022-12-11 17:08:37.071274+00:00
+[2022-12-11 17:08:50,681] {standard_task_runner.py:52} INFO - Started process 3669 to run task
+[2022-12-11 17:08:50,691] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'write_diff_task', 'manual__2022-12-11T17:08:37.071274+00:00', '--job-id', '1068', '--raw', '--subdir', 'DAGS_FOLDER/first-dag.py', '--cfg-path', '/tmp/tmph7f2kkwo', '--error-file', '/tmp/tmp00u31pdf']
+[2022-12-11 17:08:50,699] {standard_task_runner.py:80} INFO - Job 1068: Subtask write_diff_task
+[2022-12-11 17:08:50,900] {task_command.py:369} INFO - Running <TaskInstance: first_dag.write_diff_task manual__2022-12-11T17:08:37.071274+00:00 [running]> on host 7e39590a7807
+[2022-12-11 17:08:51,205] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=write_diff_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-11T17:08:37.071274+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-11T17:08:37.071274+00:00
+[2022-12-11 17:08:51,299] {python.py:173} INFO - Done. Returned value was: None
+[2022-12-11 17:08:51,348] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=first_dag, task_id=write_diff_task, execution_date=20221211T170837, start_date=20221211T170850, end_date=20221211T170851
+[2022-12-11 17:08:51,412] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-12-11 17:08:51,541] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

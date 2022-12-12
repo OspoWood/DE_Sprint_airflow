@@ -1,0 +1,23 @@
+[2022-12-12 05:13:42,877] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.generate_two_int_task manual__2022-12-12T05:13:33.076186+00:00 [queued]>
+[2022-12-12 05:13:42,899] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.generate_two_int_task manual__2022-12-12T05:13:33.076186+00:00 [queued]>
+[2022-12-12 05:13:42,902] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-12 05:13:42,903] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-12 05:13:42,904] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-12 05:13:42,965] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): generate_two_int_task> on 2022-12-12 05:13:33.076186+00:00
+[2022-12-12 05:13:42,992] {standard_task_runner.py:52} INFO - Started process 7504 to run task
+[2022-12-12 05:13:43,021] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'generate_two_int_task', 'manual__2022-12-12T05:13:33.076186+00:00', '--job-id', '1576', '--raw', '--subdir', 'DAGS_FOLDER/first-dag.py', '--cfg-path', '/tmp/tmpsykgty8l', '--error-file', '/tmp/tmpud2np6i7']
+[2022-12-12 05:13:43,024] {standard_task_runner.py:80} INFO - Job 1576: Subtask generate_two_int_task
+[2022-12-12 05:13:43,556] {task_command.py:369} INFO - Running <TaskInstance: first_dag.generate_two_int_task manual__2022-12-12T05:13:33.076186+00:00 [running]> on host 7e39590a7807
+[2022-12-12 05:13:44,012] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=generate_two_int_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-12T05:13:33.076186+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-12T05:13:33.076186+00:00
+[2022-12-12 05:13:44,135] {python.py:173} INFO - Done. Returned value was: None
+[2022-12-12 05:13:44,164] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=first_dag, task_id=generate_two_int_task, execution_date=20221212T051333, start_date=20221212T051342, end_date=20221212T051344
+[2022-12-12 05:13:44,301] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-12-12 05:13:44,912] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

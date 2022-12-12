@@ -1,0 +1,102 @@
+[2022-12-12 05:01:45,566] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.wait_for_file scheduled__2022-12-11T20:58:00+00:00 [queued]>
+[2022-12-12 05:01:45,617] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.wait_for_file scheduled__2022-12-11T20:58:00+00:00 [queued]>
+[2022-12-12 05:01:45,623] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-12 05:01:45,631] {taskinstance.py:1357} INFO - Starting attempt 2 of 3
+[2022-12-12 05:01:45,643] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-12 05:01:45,734] {taskinstance.py:1377} INFO - Executing <Task(PythonSensor): wait_for_file> on 2022-12-11 20:58:00+00:00
+[2022-12-12 05:01:45,788] {standard_task_runner.py:52} INFO - Started process 7385 to run task
+[2022-12-12 05:01:45,849] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'wait_for_file', 'scheduled__2022-12-11T20:58:00+00:00', '--job-id', '1569', '--raw', '--subdir', 'DAGS_FOLDER/first-dag.py', '--cfg-path', '/tmp/tmpp_aws3l9', '--error-file', '/tmp/tmp4_omjih_']
+[2022-12-12 05:01:45,883] {standard_task_runner.py:80} INFO - Job 1569: Subtask wait_for_file
+[2022-12-12 05:01:49,304] {task_command.py:369} INFO - Running <TaskInstance: first_dag.wait_for_file scheduled__2022-12-11T20:58:00+00:00 [running]> on host 7e39590a7807
+[2022-12-12 05:01:52,376] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=wait_for_file
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-11T20:58:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-11T20:58:00+00:00
+[2022-12-12 05:01:52,387] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:01:53,152] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 05:02:14,569] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:02:16,760] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 05:02:37,486] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:02:38,584] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 05:02:57,950] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:02:58,398] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 05:03:18,422] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:03:18,754] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 05:03:38,806] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:03:39,689] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 05:03:59,735] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:04:16,745] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 05:04:36,758] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:04:37,901] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 05:04:58,035] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:04:58,878] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 05:05:18,942] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:05:19,086] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 05:05:39,076] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:05:40,193] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 05:06:00,228] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:06:01,736] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 05:06:21,818] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:06:21,879] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 05:06:41,919] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:06:42,222] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 05:07:02,212] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:07:02,308] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 05:07:22,332] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:07:22,486] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 05:07:42,497] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:07:43,924] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 05:08:03,919] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:08:04,127] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 05:08:24,147] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:08:24,634] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 05:08:49,838] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:08:51,769] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 05:09:12,339] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:09:14,715] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 05:09:34,718] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:09:34,936] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 05:09:54,931] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:09:55,525] {logging_mixin.py:115} INFO - _wait_for_file False
+[2022-12-12 05:10:16,366] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:10:17,727] {logging_mixin.py:115} INFO - _wait_for_file False
+[2022-12-12 05:10:37,727] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:10:37,772] {logging_mixin.py:115} INFO - _wait_for_file False
+[2022-12-12 05:10:57,201] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:10:57,274] {logging_mixin.py:115} INFO - _wait_for_file False
+[2022-12-12 05:11:17,313] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:11:17,457] {logging_mixin.py:115} INFO - _wait_for_file False
+[2022-12-12 05:11:37,440] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:11:37,458] {logging_mixin.py:115} INFO - _wait_for_file False
+[2022-12-12 05:11:57,449] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:11:57,476] {logging_mixin.py:115} INFO - _wait_for_file False
+[2022-12-12 05:12:17,503] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:12:17,821] {logging_mixin.py:115} INFO - _wait_for_file False
+[2022-12-12 05:12:37,805] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:12:37,860] {logging_mixin.py:115} INFO - _wait_for_file False
+[2022-12-12 05:12:58,024] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7ab320>
+[2022-12-12 05:13:12,349] {logging_mixin.py:115} INFO - _wait_for_file False
+[2022-12-12 05:13:24,185] {local_task_job.py:221} WARNING - State of this instance has been externally set to None. Terminating instance.
+[2022-12-12 05:13:25,354] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 7385. PIDs of all processes in the group: [7385]
+[2022-12-12 05:13:25,391] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 7385
+[2022-12-12 05:13:25,398] {taskinstance.py:1541} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-12-12 05:13:27,035] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 299, in execute
+    time.sleep(self._get_next_poke_interval(started_at, run_duration, try_number))
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1543, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2022-12-12 05:13:27,192] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=first_dag, task_id=wait_for_file, execution_date=20221211T205800, start_date=20221212T050145, end_date=20221212T051327
+[2022-12-12 05:13:27,621] {standard_task_runner.py:97} ERROR - Failed to execute job 1569 for task wait_for_file ((psycopg2.errors.ForeignKeyViolation) insert or update on table "task_fail" violates foreign key constraint "task_fail_ti_fkey"
+DETAIL:  Key (dag_id, task_id, run_id, map_index)=(first_dag, wait_for_file, scheduled__2022-12-11T20:58:00+00:00, -1) is not present in table "task_instance".
+
+[SQL: INSERT INTO task_fail (task_id, dag_id, run_id, map_index, start_date, end_date, duration) VALUES (%(task_id)s, %(dag_id)s, %(run_id)s, %(map_index)s, %(start_date)s, %(end_date)s, %(duration)s) RETURNING task_fail.id]
+[parameters: {'task_id': 'wait_for_file', 'dag_id': 'first_dag', 'run_id': 'scheduled__2022-12-11T20:58:00+00:00', 'map_index': -1, 'start_date': datetime.datetime(2022, 12, 12, 5, 1, 45, 567641, tzinfo=Timezone('UTC')), 'end_date': datetime.datetime(2022, 12, 12, 5, 13, 27, 146708, tzinfo=Timezone('UTC')), 'duration': 701}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj); 7385)
+[2022-12-12 05:13:27,816] {process_utils.py:75} INFO - Process psutil.Process(pid=7385, status='terminated', exitcode=1, started='05:01:45') (7385) terminated with exit code 1

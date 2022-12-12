@@ -1,0 +1,24 @@
+[2022-12-11 14:05:01,511] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.printer scheduled__2022-12-11T14:04:00+00:00 [queued]>
+[2022-12-11 14:05:01,530] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.printer scheduled__2022-12-11T14:04:00+00:00 [queued]>
+[2022-12-11 14:05:01,531] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 14:05:01,532] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-11 14:05:01,533] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 14:05:01,583] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): printer> on 2022-12-11 14:04:00+00:00
+[2022-12-11 14:05:01,593] {standard_task_runner.py:52} INFO - Started process 234 to run task
+[2022-12-11 14:05:01,610] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'printer', 'scheduled__2022-12-11T14:04:00+00:00', '--job-id', '342', '--raw', '--subdir', 'DAGS_FOLDER/first-dag.py', '--cfg-path', '/tmp/tmpv_b9xd1y', '--error-file', '/tmp/tmp_9l0zrgt']
+[2022-12-11 14:05:01,617] {standard_task_runner.py:80} INFO - Job 342: Subtask printer
+[2022-12-11 14:05:01,828] {task_command.py:369} INFO - Running <TaskInstance: first_dag.printer scheduled__2022-12-11T14:04:00+00:00 [running]> on host 7e39590a7807
+[2022-12-11 14:05:01,980] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=printer
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-11T14:04:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-11T14:04:00+00:00
+[2022-12-11 14:05:02,009] {logging_mixin.py:115} INFO - The value is: None
+[2022-12-11 14:05:02,010] {python.py:173} INFO - Done. Returned value was: None
+[2022-12-11 14:05:02,036] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=first_dag, task_id=printer, execution_date=20221211T140400, start_date=20221211T140501, end_date=20221211T140502
+[2022-12-11 14:05:02,100] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-12-11 14:05:02,213] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

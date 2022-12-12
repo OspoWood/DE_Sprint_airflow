@@ -1,0 +1,34 @@
+[2022-12-11 15:14:05,045] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.write_diff_task scheduled__2022-12-11T15:13:00+00:00 [queued]>
+[2022-12-11 15:14:05,068] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.write_diff_task scheduled__2022-12-11T15:13:00+00:00 [queued]>
+[2022-12-11 15:14:05,069] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 15:14:05,070] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-11 15:14:05,071] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 15:14:05,091] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): write_diff_task> on 2022-12-11 15:13:00+00:00
+[2022-12-11 15:14:05,097] {standard_task_runner.py:52} INFO - Started process 2204 to run task
+[2022-12-11 15:14:05,105] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'write_diff_task', 'scheduled__2022-12-11T15:13:00+00:00', '--job-id', '796', '--raw', '--subdir', 'DAGS_FOLDER/first-dag.py', '--cfg-path', '/tmp/tmpp2gvontb', '--error-file', '/tmp/tmpq0o336b_']
+[2022-12-11 15:14:05,107] {standard_task_runner.py:80} INFO - Job 796: Subtask write_diff_task
+[2022-12-11 15:14:05,200] {task_command.py:369} INFO - Running <TaskInstance: first_dag.write_diff_task scheduled__2022-12-11T15:13:00+00:00 [running]> on host 7e39590a7807
+[2022-12-11 15:14:05,312] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=write_diff_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-11T15:13:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-11T15:13:00+00:00
+[2022-12-11 15:14:05,347] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/first-dag.py", line 55, in write_diff
+    remove_last_result(path_to_file)
+  File "/opt/airflow/dags/first-dag.py", line 39, in remove_last_result
+    with open(path, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/file.txt'
+[2022-12-11 15:14:05,375] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=first_dag, task_id=write_diff_task, execution_date=20221211T151300, start_date=20221211T151405, end_date=20221211T151405
+[2022-12-11 15:14:05,397] {standard_task_runner.py:97} ERROR - Failed to execute job 796 for task write_diff_task ([Errno 2] No such file or directory: '/tmp/file.txt'; 2204)
+[2022-12-11 15:14:05,439] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-12-11 15:14:05,493] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

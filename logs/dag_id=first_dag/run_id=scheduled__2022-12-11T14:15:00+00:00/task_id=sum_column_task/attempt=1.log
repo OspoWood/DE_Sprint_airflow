@@ -1,0 +1,34 @@
+[2022-12-11 14:16:01,207] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.sum_column_task scheduled__2022-12-11T14:15:00+00:00 [queued]>
+[2022-12-11 14:16:01,283] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.sum_column_task scheduled__2022-12-11T14:15:00+00:00 [queued]>
+[2022-12-11 14:16:01,285] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 14:16:01,287] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-11 14:16:01,289] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 14:16:01,360] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): sum_column_task> on 2022-12-11 14:15:00+00:00
+[2022-12-11 14:16:01,370] {standard_task_runner.py:52} INFO - Started process 488 to run task
+[2022-12-11 14:16:01,383] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'sum_column_task', 'scheduled__2022-12-11T14:15:00+00:00', '--job-id', '399', '--raw', '--subdir', 'DAGS_FOLDER/first-dag.py', '--cfg-path', '/tmp/tmpir8lhgxq', '--error-file', '/tmp/tmp6q4ff6n3']
+[2022-12-11 14:16:01,387] {standard_task_runner.py:80} INFO - Job 399: Subtask sum_column_task
+[2022-12-11 14:16:01,627] {task_command.py:369} INFO - Running <TaskInstance: first_dag.sum_column_task scheduled__2022-12-11T14:15:00+00:00 [running]> on host 7e39590a7807
+[2022-12-11 14:16:01,825] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=sum_column_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-11T14:15:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-11T14:15:00+00:00
+[2022-12-11 14:16:01,843] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/first-dag.py", line 29, in sum_column_and_diff
+    , map(lambda x: x.split(" "), lines)))
+  File "/opt/airflow/dags/first-dag.py", line 28, in <lambda>
+    map(lambda x: (int(x[0]), int(x[1].replace("\n", "")))
+ValueError: invalid literal for int() with base 10: '\n'
+[2022-12-11 14:16:01,869] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=first_dag, task_id=sum_column_task, execution_date=20221211T141500, start_date=20221211T141601, end_date=20221211T141601
+[2022-12-11 14:16:01,886] {standard_task_runner.py:97} ERROR - Failed to execute job 399 for task sum_column_task (invalid literal for int() with base 10: '\n'; 488)
+[2022-12-11 14:16:01,931] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-12-11 14:16:02,002] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

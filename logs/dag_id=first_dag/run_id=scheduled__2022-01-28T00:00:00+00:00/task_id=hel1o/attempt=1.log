@@ -1,0 +1,36 @@
+[2022-12-04 15:57:40,943] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.hel1o scheduled__2022-01-28T00:00:00+00:00 [queued]>
+[2022-12-04 15:57:40,964] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.hel1o scheduled__2022-01-28T00:00:00+00:00 [queued]>
+[2022-12-04 15:57:40,968] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-04 15:57:40,969] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-04 15:57:40,970] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-04 15:57:41,009] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): hel1o> on 2022-01-28 00:00:00+00:00
+[2022-12-04 15:57:41,027] {standard_task_runner.py:52} INFO - Started process 345 to run task
+[2022-12-04 15:57:41,043] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'hel1o', 'scheduled__2022-01-28T00:00:00+00:00', '--job-id', '31', '--raw', '--subdir', 'DAGS_FOLDER/first-dag.py', '--cfg-path', '/tmp/tmpk9f79dsg', '--error-file', '/tmp/tmpvr7l0plx']
+[2022-12-04 15:57:41,048] {standard_task_runner.py:80} INFO - Job 31: Subtask hel1o
+[2022-12-04 15:57:41,265] {task_command.py:369} INFO - Running <TaskInstance: first_dag.hel1o scheduled__2022-01-28T00:00:00+00:00 [running]> on host fb90b48d1471
+[2022-12-04 15:57:41,623] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=hel1o
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-28T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-01-28T00:00:00+00:00
+[2022-12-04 15:57:41,625] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-04 15:57:41,627] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echohe11o']
+[2022-12-04 15:57:41,667] {subprocess.py:85} INFO - Output:
+[2022-12-04 15:57:41,680] {subprocess.py:92} INFO - bash: line 1: echohe11o: command not found
+[2022-12-04 15:57:41,683] {subprocess.py:96} INFO - Command exited with return code 127
+[2022-12-04 15:57:41,742] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 195, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 127.
+[2022-12-04 15:57:41,755] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=first_dag, task_id=hel1o, execution_date=20220128T000000, start_date=20221204T155740, end_date=20221204T155741
+[2022-12-04 15:57:41,813] {standard_task_runner.py:97} ERROR - Failed to execute job 31 for task hel1o (Bash command failed. The command returned a non-zero exit code 127.; 345)
+[2022-12-04 15:57:41,864] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-12-04 15:57:41,996] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-12-04 15:57:42,042] {dagrun.py:547} ERROR - Marking run <DagRun first_dag @ 2022-01-28 00:00:00+00:00: scheduled__2022-01-28T00:00:00+00:00, externally triggered: False> failed
+[2022-12-04 15:57:42,044] {dagrun.py:622} INFO - DagRun Finished: dag_id=first_dag, execution_date=2022-01-28 00:00:00+00:00, run_id=scheduled__2022-01-28T00:00:00+00:00, run_start_date=2022-12-04 15:57:40.033432+00:00, run_end_date=2022-12-04 15:57:42.044401+00:00, run_duration=2.010969, state=failed, external_trigger=False, run_type=scheduled, data_interval_start=2022-01-28 00:00:00+00:00, data_interval_end=2022-01-29 00:00:00+00:00, dag_hash=60179418ae2e4cf637d1b9d3c9ff5bab

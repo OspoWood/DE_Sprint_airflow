@@ -1,0 +1,23 @@
+[2022-12-11 14:40:11,315] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.sum_column_task manual__2022-12-11T14:40:06.974507+00:00 [queued]>
+[2022-12-11 14:40:11,341] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.sum_column_task manual__2022-12-11T14:40:06.974507+00:00 [queued]>
+[2022-12-11 14:40:11,343] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 14:40:11,345] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-11 14:40:11,351] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 14:40:11,382] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): sum_column_task> on 2022-12-11 14:40:06.974507+00:00
+[2022-12-11 14:40:11,389] {standard_task_runner.py:52} INFO - Started process 1191 to run task
+[2022-12-11 14:40:11,403] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'sum_column_task', 'manual__2022-12-11T14:40:06.974507+00:00', '--job-id', '575', '--raw', '--subdir', 'DAGS_FOLDER/first-dag.py', '--cfg-path', '/tmp/tmps1i9tu4m', '--error-file', '/tmp/tmpq7lgz8co']
+[2022-12-11 14:40:11,411] {standard_task_runner.py:80} INFO - Job 575: Subtask sum_column_task
+[2022-12-11 14:40:11,524] {task_command.py:369} INFO - Running <TaskInstance: first_dag.sum_column_task manual__2022-12-11T14:40:06.974507+00:00 [running]> on host 7e39590a7807
+[2022-12-11 14:40:11,654] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=sum_column_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-11T14:40:06.974507+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-11T14:40:06.974507+00:00
+[2022-12-11 14:40:11,680] {python.py:173} INFO - Done. Returned value was: 3945
+[2022-12-11 14:40:11,725] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=first_dag, task_id=sum_column_task, execution_date=20221211T144006, start_date=20221211T144011, end_date=20221211T144011
+[2022-12-11 14:40:11,754] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-12-11 14:40:11,804] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

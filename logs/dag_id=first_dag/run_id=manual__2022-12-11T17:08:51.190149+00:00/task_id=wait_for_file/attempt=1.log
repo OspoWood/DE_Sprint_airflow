@@ -1,0 +1,109 @@
+[2022-12-11 17:09:12,423] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.wait_for_file manual__2022-12-11T17:08:51.190149+00:00 [queued]>
+[2022-12-11 17:09:12,471] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.wait_for_file manual__2022-12-11T17:08:51.190149+00:00 [queued]>
+[2022-12-11 17:09:12,473] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 17:09:12,483] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-11 17:09:12,485] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 17:09:12,545] {taskinstance.py:1377} INFO - Executing <Task(PythonSensor): wait_for_file> on 2022-12-11 17:08:51.190149+00:00
+[2022-12-11 17:09:12,594] {standard_task_runner.py:52} INFO - Started process 3703 to run task
+[2022-12-11 17:09:12,624] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'wait_for_file', 'manual__2022-12-11T17:08:51.190149+00:00', '--job-id', '1081', '--raw', '--subdir', 'DAGS_FOLDER/first-dag.py', '--cfg-path', '/tmp/tmpqr1v7lyl', '--error-file', '/tmp/tmpvq6xwm_z']
+[2022-12-11 17:09:12,631] {standard_task_runner.py:80} INFO - Job 1081: Subtask wait_for_file
+[2022-12-11 17:09:13,231] {task_command.py:369} INFO - Running <TaskInstance: first_dag.wait_for_file manual__2022-12-11T17:08:51.190149+00:00 [running]> on host 7e39590a7807
+[2022-12-11 17:09:15,665] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=wait_for_file
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-11T17:08:51.190149+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-11T17:08:51.190149+00:00
+[2022-12-11 17:09:15,669] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7a5cb0>
+[2022-12-11 17:09:15,704] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 17:10:15,687] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7a5cb0>
+[2022-12-11 17:10:15,738] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 17:11:15,740] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7a5cb0>
+[2022-12-11 17:11:15,841] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 17:12:15,854] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7a5cb0>
+[2022-12-11 17:12:16,012] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 17:13:16,035] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7a5cb0>
+[2022-12-11 17:13:16,390] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 17:14:33,461] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7a5cb0>
+[2022-12-11 17:14:34,694] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 17:15:33,896] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7a5cb0>
+[2022-12-11 17:15:34,073] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 17:21:16,431] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7a5cb0>
+[2022-12-11 17:21:24,472] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 17:27:03,465] {local_task_job.py:221} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2022-12-11 17:27:05,752] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7a5cb0>
+[2022-12-11 17:27:05,780] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 3703. PIDs of all processes in the group: [3703]
+[2022-12-11 17:27:05,783] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 3703
+[2022-12-11 17:27:05,792] {taskinstance.py:1541} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-12-11 17:27:06,550] {variable.py:272} ERROR - Unable to retrieve variable from secrets backend (MetastoreBackend). Checking subsequent secrets backend.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 265, in get_variable_from_secrets
+    var_val = secrets_backend.get_variable(key=key)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/secrets/metastore.py", line 63, in get_variable
+    var_value = session.query(Variable).filter(Variable.key == key).first()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 2734, in first
+    return self.limit(1)._iter().first()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 2821, in _iter
+    execution_options={"_sa_orm_load_options": self.load_options},
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1669, in execute
+    conn = self._connection_for_bind(bind, close_with_result=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1520, in _connection_for_bind
+    engine, execution_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 747, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3095, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 91, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3174, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3141, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 301, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 755, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 419, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 259, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 247, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 362, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 599, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 583, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1543, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2022-12-11 17:27:06,836] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 277, in execute
+    poke_return = self.poke(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/python.py", line 67, in poke
+    return_value = self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/first-dag.py", line 74, in _wait_for_file
+    path_to_file:Path = Path(Variable.get("file_path"))
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 138, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable file_path does not exist'
+[2022-12-11 17:27:06,952] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=first_dag, task_id=wait_for_file, execution_date=20221211T170851, start_date=20221211T170912, end_date=20221211T172706
+[2022-12-11 17:27:07,402] {standard_task_runner.py:97} ERROR - Failed to execute job 1081 for task wait_for_file ('Variable file_path does not exist'; 3703)
+[2022-12-11 17:27:07,593] {process_utils.py:75} INFO - Process psutil.Process(pid=3703, status='terminated', exitcode=1, started='17:09:12') (3703) terminated with exit code 1

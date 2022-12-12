@@ -1,0 +1,46 @@
+[2022-12-11 15:29:03,185] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.generate_two_int_task scheduled__2022-12-11T15:28:00+00:00 [queued]>
+[2022-12-11 15:29:03,199] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.generate_two_int_task scheduled__2022-12-11T15:28:00+00:00 [queued]>
+[2022-12-11 15:29:03,201] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 15:29:03,202] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-11 15:29:03,203] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 15:29:03,222] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): generate_two_int_task> on 2022-12-11 15:28:00+00:00
+[2022-12-11 15:29:03,231] {standard_task_runner.py:52} INFO - Started process 2719 to run task
+[2022-12-11 15:29:03,235] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'generate_two_int_task', 'scheduled__2022-12-11T15:28:00+00:00', '--job-id', '939', '--raw', '--subdir', 'DAGS_FOLDER/first-dag.py', '--cfg-path', '/tmp/tmpumo6kttf', '--error-file', '/tmp/tmp4pwrvr23']
+[2022-12-11 15:29:03,237] {standard_task_runner.py:80} INFO - Job 939: Subtask generate_two_int_task
+[2022-12-11 15:29:03,329] {task_command.py:369} INFO - Running <TaskInstance: first_dag.generate_two_int_task scheduled__2022-12-11T15:28:00+00:00 [running]> on host 7e39590a7807
+[2022-12-11 15:29:03,448] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=generate_two_int_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-11T15:28:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-11T15:28:00+00:00
+[2022-12-11 15:29:03,467] {python.py:173} INFO - Done. Returned value was: None
+[2022-12-11 15:29:03,492] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=first_dag, task_id=generate_two_int_task, execution_date=20221211T152800, start_date=20221211T152903, end_date=20221211T152903
+[2022-12-11 15:29:03,533] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-12-11 15:29:03,608] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-12-11 15:29:34,554] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.generate_two_int_task scheduled__2022-12-11T15:28:00+00:00 [queued]>
+[2022-12-11 15:29:34,568] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.generate_two_int_task scheduled__2022-12-11T15:28:00+00:00 [queued]>
+[2022-12-11 15:29:34,569] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 15:29:34,570] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-11 15:29:34,571] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 15:29:34,589] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): generate_two_int_task> on 2022-12-11 15:28:00+00:00
+[2022-12-11 15:29:34,594] {standard_task_runner.py:52} INFO - Started process 2735 to run task
+[2022-12-11 15:29:34,601] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'generate_two_int_task', 'scheduled__2022-12-11T15:28:00+00:00', '--job-id', '944', '--raw', '--subdir', 'DAGS_FOLDER/first-dag.py', '--cfg-path', '/tmp/tmpfqbtpybf', '--error-file', '/tmp/tmp7272e85z']
+[2022-12-11 15:29:34,603] {standard_task_runner.py:80} INFO - Job 944: Subtask generate_two_int_task
+[2022-12-11 15:29:34,678] {task_command.py:369} INFO - Running <TaskInstance: first_dag.generate_two_int_task scheduled__2022-12-11T15:28:00+00:00 [running]> on host 7e39590a7807
+[2022-12-11 15:29:34,779] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=generate_two_int_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-11T15:28:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-11T15:28:00+00:00
+[2022-12-11 15:29:34,801] {python.py:173} INFO - Done. Returned value was: None
+[2022-12-11 15:29:34,822] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=first_dag, task_id=generate_two_int_task, execution_date=20221211T152800, start_date=20221211T152934, end_date=20221211T152934
+[2022-12-11 15:29:34,855] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-12-11 15:29:34,918] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

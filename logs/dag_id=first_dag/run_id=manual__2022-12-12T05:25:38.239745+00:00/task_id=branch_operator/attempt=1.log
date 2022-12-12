@@ -1,0 +1,25 @@
+[2022-12-12 05:26:27,956] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.branch_operator manual__2022-12-12T05:25:38.239745+00:00 [queued]>
+[2022-12-12 05:26:27,971] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.branch_operator manual__2022-12-12T05:25:38.239745+00:00 [queued]>
+[2022-12-12 05:26:27,972] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-12 05:26:27,973] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-12 05:26:27,974] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-12 05:26:27,993] {taskinstance.py:1377} INFO - Executing <Task(BranchPythonOperator): branch_operator> on 2022-12-12 05:25:38.239745+00:00
+[2022-12-12 05:26:27,998] {standard_task_runner.py:52} INFO - Started process 7813 to run task
+[2022-12-12 05:26:28,008] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'branch_operator', 'manual__2022-12-12T05:25:38.239745+00:00', '--job-id', '1659', '--raw', '--subdir', 'DAGS_FOLDER/first-dag.py', '--cfg-path', '/tmp/tmpun0vxiam', '--error-file', '/tmp/tmp1s23xqs8']
+[2022-12-12 05:26:28,012] {standard_task_runner.py:80} INFO - Job 1659: Subtask branch_operator
+[2022-12-12 05:26:28,109] {task_command.py:369} INFO - Running <TaskInstance: first_dag.branch_operator manual__2022-12-12T05:25:38.239745+00:00 [running]> on host 7e39590a7807
+[2022-12-12 05:26:28,214] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=branch_operator
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-12T05:25:38.239745+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-12T05:25:38.239745+00:00
+[2022-12-12 05:26:28,231] {python.py:173} INFO - Done. Returned value was: create_task_table
+[2022-12-12 05:26:28,232] {skipmixin.py:140} INFO - Following branch create_task_table
+[2022-12-12 05:26:28,234] {skipmixin.py:175} INFO - Skipping tasks ['bash_error']
+[2022-12-12 05:26:28,305] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=first_dag, task_id=branch_operator, execution_date=20221212T052538, start_date=20221212T052627, end_date=20221212T052628
+[2022-12-12 05:26:28,337] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-12-12 05:26:28,386] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

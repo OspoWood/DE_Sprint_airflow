@@ -1,0 +1,32 @@
+[2022-12-12 05:25:29,316] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.create_task_table manual__2022-12-12T05:25:27.068019+00:00 [queued]>
+[2022-12-12 05:25:29,439] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.create_task_table manual__2022-12-12T05:25:27.068019+00:00 [queued]>
+[2022-12-12 05:25:29,449] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-12 05:25:29,450] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-12 05:25:29,451] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-12 05:25:29,612] {taskinstance.py:1377} INFO - Executing <Task(PostgresOperator): create_task_table> on 2022-12-12 05:25:27.068019+00:00
+[2022-12-12 05:25:29,780] {standard_task_runner.py:52} INFO - Started process 7736 to run task
+[2022-12-12 05:25:29,841] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'create_task_table', 'manual__2022-12-12T05:25:27.068019+00:00', '--job-id', '1624', '--raw', '--subdir', 'DAGS_FOLDER/first-dag.py', '--cfg-path', '/tmp/tmpwhueki3o', '--error-file', '/tmp/tmp1hqplzuz']
+[2022-12-12 05:25:29,850] {standard_task_runner.py:80} INFO - Job 1624: Subtask create_task_table
+[2022-12-12 05:25:30,248] {task_command.py:369} INFO - Running <TaskInstance: first_dag.create_task_table manual__2022-12-12T05:25:27.068019+00:00 [running]> on host 7e39590a7807
+[2022-12-12 05:25:30,964] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=create_task_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-12T05:25:27.068019+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-12T05:25:27.068019+00:00
+[2022-12-12 05:25:31,092] {base.py:68} INFO - Using connection ID 'db' for task execution.
+[2022-12-12 05:25:31,142] {dbapi.py:208} INFO - Running statement: 
+                create table if not exists task (
+                id SERIAL,
+	            value_1 INT,
+	            value_2 INT
+            );
+              , parameters: None
+[2022-12-12 05:25:31,149] {postgres.py:94} INFO - NOTICE:  relation "task" already exists, skipping
+
+[2022-12-12 05:25:31,252] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=first_dag, task_id=create_task_table, execution_date=20221212T052527, start_date=20221212T052529, end_date=20221212T052531
+[2022-12-12 05:25:31,307] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-12-12 05:25:31,548] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

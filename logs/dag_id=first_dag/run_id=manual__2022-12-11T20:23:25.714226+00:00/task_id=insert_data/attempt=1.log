@@ -1,0 +1,24 @@
+[2022-12-11 20:24:16,487] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.insert_data manual__2022-12-11T20:23:25.714226+00:00 [queued]>
+[2022-12-11 20:24:16,578] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.insert_data manual__2022-12-11T20:23:25.714226+00:00 [queued]>
+[2022-12-11 20:24:16,581] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 20:24:16,583] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-11 20:24:16,584] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 20:24:16,690] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): insert_data> on 2022-12-11 20:23:25.714226+00:00
+[2022-12-11 20:24:16,711] {standard_task_runner.py:52} INFO - Started process 5891 to run task
+[2022-12-11 20:24:16,778] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'insert_data', 'manual__2022-12-11T20:23:25.714226+00:00', '--job-id', '1421', '--raw', '--subdir', 'DAGS_FOLDER/first-dag.py', '--cfg-path', '/tmp/tmpzswsl4kl', '--error-file', '/tmp/tmpi2fm47w8']
+[2022-12-11 20:24:16,794] {standard_task_runner.py:80} INFO - Job 1421: Subtask insert_data
+[2022-12-11 20:24:17,035] {task_command.py:369} INFO - Running <TaskInstance: first_dag.insert_data manual__2022-12-11T20:23:25.714226+00:00 [running]> on host 7e39590a7807
+[2022-12-11 20:24:17,590] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=insert_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-11T20:23:25.714226+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-11T20:23:25.714226+00:00
+[2022-12-11 20:24:17,732] {base.py:68} INFO - Using connection ID 'db' for task execution.
+[2022-12-11 20:24:17,804] {python.py:173} INFO - Done. Returned value was: None
+[2022-12-11 20:24:18,078] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=first_dag, task_id=insert_data, execution_date=20221211T202325, start_date=20221211T202416, end_date=20221211T202418
+[2022-12-11 20:24:18,251] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-12-11 20:24:18,603] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

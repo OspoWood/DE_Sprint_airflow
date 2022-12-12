@@ -1,0 +1,40 @@
+[2022-12-11 17:09:31,315] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.wait_for_file manual__2022-12-11T17:09:04.443777+00:00 [queued]>
+[2022-12-11 17:09:31,344] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.wait_for_file manual__2022-12-11T17:09:04.443777+00:00 [queued]>
+[2022-12-11 17:09:31,346] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 17:09:31,348] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-11 17:09:31,349] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 17:09:31,393] {taskinstance.py:1377} INFO - Executing <Task(PythonSensor): wait_for_file> on 2022-12-11 17:09:04.443777+00:00
+[2022-12-11 17:09:31,403] {standard_task_runner.py:52} INFO - Started process 3720 to run task
+[2022-12-11 17:09:31,419] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'wait_for_file', 'manual__2022-12-11T17:09:04.443777+00:00', '--job-id', '1087', '--raw', '--subdir', 'DAGS_FOLDER/first-dag.py', '--cfg-path', '/tmp/tmpjslk1_rz', '--error-file', '/tmp/tmpbop7f_oc']
+[2022-12-11 17:09:31,424] {standard_task_runner.py:80} INFO - Job 1087: Subtask wait_for_file
+[2022-12-11 17:09:31,606] {task_command.py:369} INFO - Running <TaskInstance: first_dag.wait_for_file manual__2022-12-11T17:09:04.443777+00:00 [running]> on host 7e39590a7807
+[2022-12-11 17:09:31,881] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=wait_for_file
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-11T17:09:04.443777+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-11T17:09:04.443777+00:00
+[2022-12-11 17:09:31,891] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec9c0cb0>
+[2022-12-11 17:09:31,948] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 17:10:31,945] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec9c0cb0>
+[2022-12-11 17:10:32,036] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 17:11:32,018] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec9c0cb0>
+[2022-12-11 17:11:32,071] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 17:12:32,081] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec9c0cb0>
+[2022-12-11 17:12:32,120] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 17:13:32,093] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec9c0cb0>
+[2022-12-11 17:13:32,164] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 17:14:48,827] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec9c0cb0>
+[2022-12-11 17:14:48,933] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 17:15:48,159] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec9c0cb0>
+[2022-12-11 17:15:50,424] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 17:21:33,522] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec9c0cb0>
+[2022-12-11 17:21:34,471] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 17:27:01,618] {local_task_job.py:221} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2022-12-11 17:27:02,531] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 3720. PIDs of all processes in the group: [3720]
+[2022-12-11 17:27:02,610] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 3720
+[2022-12-11 17:27:02,856] {taskinstance.py:1541} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-12-11 17:27:07,277] {process_utils.py:75} INFO - Process psutil.Process(pid=3720, status='terminated', exitcode=0, started='17:09:30') (3720) terminated with exit code 0

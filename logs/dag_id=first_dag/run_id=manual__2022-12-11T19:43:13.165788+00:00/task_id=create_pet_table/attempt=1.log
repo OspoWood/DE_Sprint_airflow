@@ -1,0 +1,2 @@
+[2022-12-11 19:43:15,546] {taskinstance.py:1153} INFO - Dependencies not met for <TaskInstance: first_dag.create_pet_table manual__2022-12-11T19:43:13.165788+00:00 [queued]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_tasks_state={'total': 1, 'successes': 0, 'skipped': 0, 'failed': 0, 'upstream_failed': 0, 'done': 0}, upstream_task_ids={'hello_task2'}
+[2022-12-11 19:43:15,551] {local_task_job.py:101} INFO - Task is not able to be run

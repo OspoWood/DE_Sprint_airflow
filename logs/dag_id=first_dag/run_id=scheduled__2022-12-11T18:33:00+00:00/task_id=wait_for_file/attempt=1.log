@@ -1,0 +1,74 @@
+[2022-12-11 18:59:05,817] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.wait_for_file scheduled__2022-12-11T18:33:00+00:00 [queued]>
+[2022-12-11 18:59:05,876] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.wait_for_file scheduled__2022-12-11T18:33:00+00:00 [queued]>
+[2022-12-11 18:59:05,882] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 18:59:05,883] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-11 18:59:05,884] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 18:59:05,983] {taskinstance.py:1377} INFO - Executing <Task(PythonSensor): wait_for_file> on 2022-12-11 18:33:00+00:00
+[2022-12-11 18:59:05,988] {standard_task_runner.py:52} INFO - Started process 4517 to run task
+[2022-12-11 18:59:06,000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'wait_for_file', 'scheduled__2022-12-11T18:33:00+00:00', '--job-id', '1213', '--raw', '--subdir', 'DAGS_FOLDER/first-dag.py', '--cfg-path', '/tmp/tmpw1sfdyh5', '--error-file', '/tmp/tmp0bxit_ie']
+[2022-12-11 18:59:06,004] {standard_task_runner.py:80} INFO - Job 1213: Subtask wait_for_file
+[2022-12-11 18:59:06,209] {task_command.py:369} INFO - Running <TaskInstance: first_dag.wait_for_file scheduled__2022-12-11T18:33:00+00:00 [running]> on host 7e39590a7807
+[2022-12-11 18:59:06,570] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=wait_for_file
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-11T18:33:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-11T18:33:00+00:00
+[2022-12-11 18:59:06,574] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7a5cb0>
+[2022-12-11 18:59:06,632] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 18:59:06,633] {logging_mixin.py:115} INFO - total attempt 0
+[2022-12-11 19:00:06,590] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7a5cb0>
+[2022-12-11 19:00:06,621] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 19:00:06,622] {logging_mixin.py:115} INFO - total attempt 0
+[2022-12-11 19:01:06,600] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7a5cb0>
+[2022-12-11 19:01:06,627] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 19:01:06,628] {logging_mixin.py:115} INFO - total attempt 0
+[2022-12-11 19:02:06,617] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7a5cb0>
+[2022-12-11 19:02:06,650] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 19:02:06,651] {logging_mixin.py:115} INFO - total attempt 0
+[2022-12-11 19:03:06,607] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7a5cb0>
+[2022-12-11 19:03:06,628] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 19:03:06,629] {logging_mixin.py:115} INFO - total attempt 0
+[2022-12-11 19:04:06,617] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7a5cb0>
+[2022-12-11 19:04:06,638] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 19:04:06,640] {logging_mixin.py:115} INFO - total attempt 0
+[2022-12-11 19:05:06,623] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7a5cb0>
+[2022-12-11 19:05:06,648] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 19:05:06,649] {logging_mixin.py:115} INFO - total attempt 0
+[2022-12-11 19:06:06,612] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7a5cb0>
+[2022-12-11 19:06:06,630] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 19:06:06,632] {logging_mixin.py:115} INFO - total attempt 0
+[2022-12-11 19:07:06,599] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7a5cb0>
+[2022-12-11 19:07:06,628] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 19:07:06,630] {logging_mixin.py:115} INFO - total attempt 0
+[2022-12-11 19:08:07,042] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7a5cb0>
+[2022-12-11 19:08:07,061] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 19:08:07,063] {logging_mixin.py:115} INFO - total attempt 0
+[2022-12-11 19:09:06,637] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7a5cb0>
+[2022-12-11 19:09:06,702] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 19:09:06,703] {logging_mixin.py:115} INFO - total attempt 0
+[2022-12-11 19:10:07,431] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7a5cb0>
+[2022-12-11 19:10:07,872] {logging_mixin.py:115} INFO - _wait_for_file False
+[2022-12-11 19:10:07,878] {logging_mixin.py:115} INFO - total attempt 0
+[2022-12-11 19:10:52,377] {local_task_job.py:221} WARNING - State of this instance has been externally set to None. Terminating instance.
+[2022-12-11 19:10:52,398] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 4517. PIDs of all processes in the group: [4517]
+[2022-12-11 19:10:52,403] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 4517
+[2022-12-11 19:10:52,406] {taskinstance.py:1541} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-12-11 19:10:52,466] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 299, in execute
+    time.sleep(self._get_next_poke_interval(started_at, run_duration, try_number))
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1543, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2022-12-11 19:10:52,509] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=first_dag, task_id=wait_for_file, execution_date=20221211T183300, start_date=20221211T185905, end_date=20221211T191052
+[2022-12-11 19:10:52,621] {standard_task_runner.py:97} ERROR - Failed to execute job 1213 for task wait_for_file ((psycopg2.errors.ForeignKeyViolation) insert or update on table "task_fail" violates foreign key constraint "task_fail_ti_fkey"
+DETAIL:  Key (dag_id, task_id, run_id, map_index)=(first_dag, wait_for_file, scheduled__2022-12-11T18:33:00+00:00, -1) is not present in table "task_instance".
+
+[SQL: INSERT INTO task_fail (task_id, dag_id, run_id, map_index, start_date, end_date, duration) VALUES (%(task_id)s, %(dag_id)s, %(run_id)s, %(map_index)s, %(start_date)s, %(end_date)s, %(duration)s) RETURNING task_fail.id]
+[parameters: {'task_id': 'wait_for_file', 'dag_id': 'first_dag', 'run_id': 'scheduled__2022-12-11T18:33:00+00:00', 'map_index': -1, 'start_date': datetime.datetime(2022, 12, 11, 18, 59, 5, 820109, tzinfo=Timezone('UTC')), 'end_date': datetime.datetime(2022, 12, 11, 19, 10, 52, 491840, tzinfo=Timezone('UTC')), 'duration': 706}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj); 4517)
+[2022-12-11 19:10:52,678] {process_utils.py:75} INFO - Process psutil.Process(pid=4517, status='terminated', exitcode=1, started='18:59:05') (4517) terminated with exit code 1

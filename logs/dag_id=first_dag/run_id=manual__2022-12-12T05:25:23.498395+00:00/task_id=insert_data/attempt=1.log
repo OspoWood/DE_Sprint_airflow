@@ -1,0 +1,34 @@
+[2022-12-12 05:25:28,551] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.insert_data manual__2022-12-12T05:25:23.498395+00:00 [queued]>
+[2022-12-12 05:25:28,626] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.insert_data manual__2022-12-12T05:25:23.498395+00:00 [queued]>
+[2022-12-12 05:25:28,627] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-12 05:25:28,629] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-12 05:25:28,630] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-12 05:25:28,686] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): insert_data> on 2022-12-12 05:25:23.498395+00:00
+[2022-12-12 05:25:28,727] {standard_task_runner.py:52} INFO - Started process 7735 to run task
+[2022-12-12 05:25:28,762] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'insert_data', 'manual__2022-12-12T05:25:23.498395+00:00', '--job-id', '1623', '--raw', '--subdir', 'DAGS_FOLDER/first-dag.py', '--cfg-path', '/tmp/tmpsdjpsanj', '--error-file', '/tmp/tmpftbt_o1s']
+[2022-12-12 05:25:28,774] {standard_task_runner.py:80} INFO - Job 1623: Subtask insert_data
+[2022-12-12 05:25:29,365] {task_command.py:369} INFO - Running <TaskInstance: first_dag.insert_data manual__2022-12-12T05:25:23.498395+00:00 [running]> on host 7e39590a7807
+[2022-12-12 05:25:30,041] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=insert_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-12T05:25:23.498395+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-12T05:25:23.498395+00:00
+[2022-12-12 05:25:30,108] {base.py:68} INFO - Using connection ID 'db' for task execution.
+[2022-12-12 05:25:30,256] {logging_mixin.py:115} INFO - PostgreSQL connection is closed
+[2022-12-12 05:25:30,296] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/first-dag.py", line 41, in insert_data_to_db
+    cursor.execute(sql)
+psycopg2.ProgrammingError: can't execute an empty query
+[2022-12-12 05:25:30,381] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=first_dag, task_id=insert_data, execution_date=20221212T052523, start_date=20221212T052528, end_date=20221212T052530
+[2022-12-12 05:25:30,652] {standard_task_runner.py:97} ERROR - Failed to execute job 1623 for task insert_data (can't execute an empty query; 7735)
+[2022-12-12 05:25:30,748] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-12-12 05:25:31,059] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

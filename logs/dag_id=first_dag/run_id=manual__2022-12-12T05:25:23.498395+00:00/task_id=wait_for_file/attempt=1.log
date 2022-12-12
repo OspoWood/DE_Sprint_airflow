@@ -1,0 +1,27 @@
+[2022-12-12 05:25:42,025] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.wait_for_file manual__2022-12-12T05:25:23.498395+00:00 [queued]>
+[2022-12-12 05:25:42,244] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.wait_for_file manual__2022-12-12T05:25:23.498395+00:00 [queued]>
+[2022-12-12 05:25:42,254] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-12 05:25:42,262] {taskinstance.py:1357} INFO - Starting attempt 1 of 3
+[2022-12-12 05:25:42,272] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-12 05:25:42,492] {taskinstance.py:1377} INFO - Executing <Task(PythonSensor): wait_for_file> on 2022-12-12 05:25:23.498395+00:00
+[2022-12-12 05:25:42,517] {standard_task_runner.py:52} INFO - Started process 7771 to run task
+[2022-12-12 05:25:42,749] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'wait_for_file', 'manual__2022-12-12T05:25:23.498395+00:00', '--job-id', '1639', '--raw', '--subdir', 'DAGS_FOLDER/first-dag.py', '--cfg-path', '/tmp/tmps6cgpt0f', '--error-file', '/tmp/tmptpbx0nxt']
+[2022-12-12 05:25:42,755] {standard_task_runner.py:80} INFO - Job 1639: Subtask wait_for_file
+[2022-12-12 05:25:43,615] {task_command.py:369} INFO - Running <TaskInstance: first_dag.wait_for_file manual__2022-12-12T05:25:23.498395+00:00 [running]> on host 7e39590a7807
+[2022-12-12 05:26:02,823] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=wait_for_file
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-12T05:25:23.498395+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-12T05:25:23.498395+00:00
+[2022-12-12 05:26:02,848] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7af440>
+[2022-12-12 05:26:03,134] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 05:26:23,158] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec7af440>
+[2022-12-12 05:26:23,221] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 05:26:23,228] {base.py:301} INFO - Success criteria met. Exiting.
+[2022-12-12 05:26:23,326] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=first_dag, task_id=wait_for_file, execution_date=20221212T052523, start_date=20221212T052542, end_date=20221212T052623
+[2022-12-12 05:26:23,506] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-12-12 05:26:23,898] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

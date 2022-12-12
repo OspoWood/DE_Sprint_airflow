@@ -1,0 +1,467 @@
+[2022-12-11 21:22:08,406] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.wait_for_file scheduled__2022-12-11T21:20:00+00:00 [queued]>
+[2022-12-11 21:22:08,434] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_dag.wait_for_file scheduled__2022-12-11T21:20:00+00:00 [queued]>
+[2022-12-11 21:22:08,436] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 21:22:08,437] {taskinstance.py:1357} INFO - Starting attempt 1 of 3
+[2022-12-11 21:22:08,439] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 21:22:08,491] {taskinstance.py:1377} INFO - Executing <Task(PythonSensor): wait_for_file> on 2022-12-11 21:20:00+00:00
+[2022-12-11 21:22:08,504] {standard_task_runner.py:52} INFO - Started process 6631 to run task
+[2022-12-11 21:22:08,557] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'wait_for_file', 'scheduled__2022-12-11T21:20:00+00:00', '--job-id', '1550', '--raw', '--subdir', 'DAGS_FOLDER/first-dag.py', '--cfg-path', '/tmp/tmpg5x8wdgo', '--error-file', '/tmp/tmpdjsj1p5s']
+[2022-12-11 21:22:08,568] {standard_task_runner.py:80} INFO - Job 1550: Subtask wait_for_file
+[2022-12-11 21:22:09,168] {task_command.py:369} INFO - Running <TaskInstance: first_dag.wait_for_file scheduled__2022-12-11T21:20:00+00:00 [running]> on host 7e39590a7807
+[2022-12-11 21:22:10,046] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=first_dag
+AIRFLOW_CTX_TASK_ID=wait_for_file
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-11T21:20:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-11T21:20:00+00:00
+[2022-12-11 21:22:10,049] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:22:10,068] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:22:30,087] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:22:30,110] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:22:50,096] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:22:50,116] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:23:10,096] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:23:10,119] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:23:30,138] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:23:30,161] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:23:50,139] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:23:50,158] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:24:10,138] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:24:10,158] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:24:30,180] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:24:30,203] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:24:50,180] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:24:50,195] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:25:10,178] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:25:10,193] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:25:30,214] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:25:30,225] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:25:50,191] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:25:50,220] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:26:10,207] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:26:10,233] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:26:30,244] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:26:30,316] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:26:50,300] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:26:50,322] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:27:10,304] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:27:10,335] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:27:30,340] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:27:30,364] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:27:50,349] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:27:50,362] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:28:10,353] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:28:10,376] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:28:30,396] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:28:30,431] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:28:50,401] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:28:50,432] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:29:10,420] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:29:10,450] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:29:30,476] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:29:30,505] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:29:50,491] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:29:50,548] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:30:10,557] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:30:10,579] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:30:30,589] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:30:30,613] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:30:50,600] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:30:50,622] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:31:10,612] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:31:10,625] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:31:30,640] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:31:30,654] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:31:50,643] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:31:50,657] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:32:10,634] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:32:10,655] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:32:30,661] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:32:30,683] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:32:50,662] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:32:50,695] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:33:10,680] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:33:10,697] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:33:30,707] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:33:30,766] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:33:50,747] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:33:50,772] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:34:10,760] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:34:10,781] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:34:30,803] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:34:30,822] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:34:50,810] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:34:50,838] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:37:38,771] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:37:38,820] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:37:58,868] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:38:09,467] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:38:29,509] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:38:31,096] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:38:51,804] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:38:52,267] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:39:12,623] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:39:12,830] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:39:32,825] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:39:33,155] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:39:53,194] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:39:53,446] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:40:13,434] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:40:13,683] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:40:33,677] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:40:33,739] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:40:53,752] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:40:55,130] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:41:15,595] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:41:15,951] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:41:35,926] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:41:35,983] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:41:56,244] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:42:01,873] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:42:22,031] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:42:22,954] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:42:42,948] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:42:42,964] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:43:02,951] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:43:02,981] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:43:23,004] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:43:23,081] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:43:43,057] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:43:43,124] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:44:03,105] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:44:03,226] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:44:23,243] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:44:23,363] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:44:43,345] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:44:43,451] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:45:03,438] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:45:03,462] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:45:23,468] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:45:23,525] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:45:43,513] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:45:43,589] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:46:03,575] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:46:03,684] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:46:23,721] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:46:23,844] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:46:43,854] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:46:43,910] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:47:03,906] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:47:03,993] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:47:24,027] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:47:24,092] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:47:44,081] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:47:44,154] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:48:04,149] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:48:04,249] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:48:24,276] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:48:24,337] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:48:44,328] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:48:44,374] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:49:04,354] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:49:04,404] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:49:24,415] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:49:24,448] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:49:44,427] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:49:44,493] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:50:04,463] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:50:04,524] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:50:24,550] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:50:24,609] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:50:44,606] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:50:44,676] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:51:04,660] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:51:04,705] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:51:24,713] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:51:24,766] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:51:44,752] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:51:44,857] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:52:04,831] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:52:04,859] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:52:24,875] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:52:24,923] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:52:44,900] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:52:44,954] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:53:04,950] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:53:05,000] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:53:25,025] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:53:25,109] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:53:45,088] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:53:45,135] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:54:05,119] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:54:05,206] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:54:25,227] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:54:25,267] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:54:45,257] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:54:45,307] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:55:05,285] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:55:05,338] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:55:25,352] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:55:25,377] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:55:45,360] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:55:45,394] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:56:05,386] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:56:05,411] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:56:25,434] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:56:25,581] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:57:47,570] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:57:47,583] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:58:08,291] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:58:11,076] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:58:31,098] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:58:31,205] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:58:51,198] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:58:51,488] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:59:11,481] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:59:11,565] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:59:31,613] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:59:33,509] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 21:59:53,503] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 21:59:53,523] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:00:13,519] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:00:13,803] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:00:33,883] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:00:48,342] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:01:08,667] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:01:08,914] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:01:29,364] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:01:29,547] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:01:49,679] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:01:49,822] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:02:10,322] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:02:13,565] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:02:33,596] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:02:33,762] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:02:53,784] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:02:54,865] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:03:14,856] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:03:15,278] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:03:35,270] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:03:35,365] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:03:56,087] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:03:57,767] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:04:17,756] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:04:17,809] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:04:37,800] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:04:37,815] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:04:57,838] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:04:58,025] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:05:18,022] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:05:18,096] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:05:38,083] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:05:38,988] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:05:59,921] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:06:00,056] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:06:20,046] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:06:20,068] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:06:40,056] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:06:40,993] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:07:01,020] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:07:01,463] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:07:21,460] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:07:27,408] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:07:47,476] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:07:51,663] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:08:11,650] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:08:12,595] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:08:32,909] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:08:32,947] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:08:52,943] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:08:52,972] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:09:12,963] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:09:15,257] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:09:35,702] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:09:35,744] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:09:55,772] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:09:55,954] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:10:15,543] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:10:15,873] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:10:37,015] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:10:43,678] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:11:03,736] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:11:03,831] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:11:25,779] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:11:26,165] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:11:46,152] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:11:46,696] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:12:06,685] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:12:06,698] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:12:26,719] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:12:26,738] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:12:47,500] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:12:53,391] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:13:13,407] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:13:13,541] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:13:33,565] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:13:33,621] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:13:53,612] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:13:53,676] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:14:13,675] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:14:13,769] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:14:33,792] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:14:33,819] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:14:53,804] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:14:54,095] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:15:14,083] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:15:15,572] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:15:35,800] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:15:37,972] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:15:58,107] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:15:58,327] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:16:18,500] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:16:18,589] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:16:38,611] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:16:50,067] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:17:10,122] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:17:19,315] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:17:39,305] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:17:39,336] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:17:59,358] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:17:59,856] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:18:20,284] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:18:20,358] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:18:40,346] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:18:40,389] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:19:00,412] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:19:01,085] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:19:21,354] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:19:32,728] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:19:53,225] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:19:53,365] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:20:13,364] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:20:13,477] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:20:33,504] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:20:33,738] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:20:53,791] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:20:53,931] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:21:13,929] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:21:13,990] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:21:34,012] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:21:34,068] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:21:54,076] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:21:56,553] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:22:16,582] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:22:17,818] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:22:37,780] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:22:37,977] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:22:58,007] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:22:58,058] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:23:18,039] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:23:18,145] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:23:38,143] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:23:38,161] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:23:58,196] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:23:59,831] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:24:20,111] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:24:20,271] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:24:40,381] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:24:41,188] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:25:01,763] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:25:01,862] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:25:21,733] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:25:21,914] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:25:41,905] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:25:41,990] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:26:02,013] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:26:02,323] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:26:22,328] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:26:23,373] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:26:43,365] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:26:43,563] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:27:03,593] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:27:03,698] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:27:23,680] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:27:23,763] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:27:43,773] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:27:44,842] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:28:04,872] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:28:05,261] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:28:25,644] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:28:25,973] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:28:45,991] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:28:46,130] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:29:06,159] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:29:06,216] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:29:26,210] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:29:26,346] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:29:46,553] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:29:46,790] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:30:06,848] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:30:06,929] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:30:26,903] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:30:27,038] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:30:47,027] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:30:47,124] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:31:07,119] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:31:07,348] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:31:27,377] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:31:27,511] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:31:47,541] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:31:47,609] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:32:07,593] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:32:08,126] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:32:28,156] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:32:28,247] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:32:48,236] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:32:48,422] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:33:08,462] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:33:09,289] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:33:29,339] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:33:29,395] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:33:51,068] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:33:53,187] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:34:13,264] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:34:13,880] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:34:33,992] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:34:54,419] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:35:14,406] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:35:14,958] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:35:35,080] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:35:56,450] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:36:16,517] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:36:17,620] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:36:41,277] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:36:48,505] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:37:08,494] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:37:08,527] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:37:28,549] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:37:28,646] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:37:48,661] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:37:50,953] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:38:10,952] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:38:13,936] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:38:33,999] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:38:34,299] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:38:54,295] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:38:54,869] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:39:17,035] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:39:24,303] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:39:44,367] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:39:44,833] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:40:05,235] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:40:19,848] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:40:39,878] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:40:40,118] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:41:00,172] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-11 22:41:02,832] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-11 22:41:23,557] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-12 04:55:55,818] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 04:56:16,517] {python.py:66} INFO - Poking callable: <function _wait_for_file at 0x7f6cec79e560>
+[2022-12-12 04:56:18,582] {logging_mixin.py:115} INFO - _wait_for_file True
+[2022-12-12 04:56:35,202] {local_task_job.py:221} WARNING - State of this instance has been externally set to up_for_retry. Terminating instance.
+[2022-12-12 04:56:35,611] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 6631. PIDs of all processes in the group: [6631]
+[2022-12-12 04:56:35,672] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 6631
+[2022-12-12 04:56:35,698] {taskinstance.py:1541} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-12-12 04:56:36,439] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 299, in execute
+    time.sleep(self._get_next_poke_interval(started_at, run_duration, try_number))
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1543, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2022-12-12 04:56:36,617] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=first_dag, task_id=wait_for_file, execution_date=20221211T212000, start_date=20221211T212208, end_date=20221212T045636
+[2022-12-12 04:56:37,188] {standard_task_runner.py:97} ERROR - Failed to execute job 1550 for task wait_for_file (Task received SIGTERM signal; 6631)
+[2022-12-12 04:56:37,341] {process_utils.py:75} INFO - Process psutil.Process(pid=6631, status='terminated', exitcode=1, started='21:22:07') (6631) terminated with exit code 1
