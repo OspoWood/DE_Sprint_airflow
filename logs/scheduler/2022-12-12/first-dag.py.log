@@ -578,3 +578,17 @@ SyntaxError: invalid syntax
 [2022-12-12 05:32:08,402] {logging_mixin.py:115} INFO - [2022-12-12 05:32:08,401] {dag.py:2371} INFO - Sync 1 DAGs
 [2022-12-12 05:32:08,432] {logging_mixin.py:115} INFO - [2022-12-12 05:32:08,432] {dag.py:2919} INFO - Setting next_dagrun for first_dag to 2022-12-12T05:33:00+00:00, run_after=2022-12-12T05:34:00+00:00
 [2022-12-12 05:32:08,458] {processor.py:161} INFO - Processing /opt/airflow/dags/first-dag.py took 0.248 seconds
+[2022-12-12 05:32:38,611] {processor.py:153} INFO - Started process (PID=7982) to work on /opt/airflow/dags/first-dag.py
+[2022-12-12 05:32:38,613] {processor.py:641} INFO - Processing file /opt/airflow/dags/first-dag.py for tasks to queue
+[2022-12-12 05:32:38,615] {logging_mixin.py:115} INFO - [2022-12-12 05:32:38,615] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/first-dag.py
+[2022-12-12 05:32:38,641] {processor.py:651} INFO - DAG(s) dict_keys(['first_dag']) retrieved from /opt/airflow/dags/first-dag.py
+[2022-12-12 05:32:38,787] {logging_mixin.py:115} INFO - [2022-12-12 05:32:38,787] {dag.py:2371} INFO - Sync 1 DAGs
+[2022-12-12 05:32:38,830] {logging_mixin.py:115} INFO - [2022-12-12 05:32:38,829] {dag.py:2919} INFO - Setting next_dagrun for first_dag to 2022-12-12T05:33:00+00:00, run_after=2022-12-12T05:34:00+00:00
+[2022-12-12 05:32:38,851] {processor.py:161} INFO - Processing /opt/airflow/dags/first-dag.py took 0.246 seconds
+[2022-12-12 05:33:09,015] {processor.py:153} INFO - Started process (PID=7987) to work on /opt/airflow/dags/first-dag.py
+[2022-12-12 05:33:09,017] {processor.py:641} INFO - Processing file /opt/airflow/dags/first-dag.py for tasks to queue
+[2022-12-12 05:33:09,019] {logging_mixin.py:115} INFO - [2022-12-12 05:33:09,019] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/first-dag.py
+[2022-12-12 05:33:09,066] {processor.py:651} INFO - DAG(s) dict_keys(['first_dag']) retrieved from /opt/airflow/dags/first-dag.py
+[2022-12-12 05:33:09,240] {logging_mixin.py:115} INFO - [2022-12-12 05:33:09,240] {dag.py:2371} INFO - Sync 1 DAGs
+[2022-12-12 05:33:09,277] {logging_mixin.py:115} INFO - [2022-12-12 05:33:09,277] {dag.py:2919} INFO - Setting next_dagrun for first_dag to 2022-12-12T05:34:00+00:00, run_after=2022-12-12T05:35:00+00:00
+[2022-12-12 05:33:09,317] {processor.py:161} INFO - Processing /opt/airflow/dags/first-dag.py took 0.313 seconds
